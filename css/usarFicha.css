@@ -1,0 +1,46 @@
+.leftColumn {   
+    float: left;
+    width: 30%;
+    background-color: #f10000;
+    height: 100px;
+}
+
+.centerColumn {
+    float: left;
+    width: 40%;
+    background-color: #f1f100;
+}
+  
+.rightColumn {
+    float: left;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+.row {
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    background-color: #A04D4E;
+    overflow: hidden;
+    margin: 20px;
+    padding: 10px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    padding: 20px;
+
+}
+
+.inputs {
+    margin: 10px;
+}
