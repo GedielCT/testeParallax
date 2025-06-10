@@ -1,40 +1,16 @@
-body{
-    background-color: #111111;
-}
 
-* {
-    box-sizing: border-box;
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #981C1E;
-}
-
-.topnav a {
-    color: black;
-    display: block;
-    text-align: center;
-    padding: 19px 16px;
-}
-
-.topnav a:hover {
-    color: aqua;
-}
-
-.navegacao a {
-    float: left;
-}
-
-.perfil a{
-    float: right;
-}
 
 .header {
-    height: 300px;
+    width: 100;
     text-align: center;
     background: black;
-  }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
 
 .corpo {
     padding: 20px;

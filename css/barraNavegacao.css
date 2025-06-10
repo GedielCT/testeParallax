@@ -1,0 +1,29 @@
+/* BARRA DE NAVERAÇÃO SUPERIOR */
+.topnav {
+    display: flex;
+    background-color: #981C1E;
+    justify-content: space-between; /* SEPARA AS DUAS CLASSES ABAIXO */
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navegacao { /* BOTÕES DA ESQUERDA */
+    display: flex;
+    gap: 5px;
+}
+.perfil { /* BOTÕES DA DIREITA */
+    display: flex;
+    gap: 5px;
+}
+.topnav a { /* BOTÕES DA BARRA DE NAVEGAÇÃO SUPERIOR */
+    background-color: #981C1E;
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 15px 6px;
+    border-radius: none;
+    display: inline-block;
+}
+.topnav a:hover {
+    background-color: #981C7E;
+}
+/*-------------------------------*/
