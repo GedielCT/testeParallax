@@ -10,14 +10,14 @@
     display: flex;
     gap: 5px;
 }
-.perfil { /* BOTÕES DA DIREITA */
+.menu { /* BOTÕES DA DIREITA */
     display: flex;
     gap: 5px;
 }
-.perfil-container {
+.menu-container {
     position: relative;
 }
-.perfil-toggle {
+.menu-toggle {
     display: none;
     background: none;
     border: none;
@@ -26,7 +26,7 @@
     cursor: pointer;
 }
 @media (max-width: 600px) {
-    .perfil {
+    .menu {
       display: none;
       position: absolute;
       right: 0;
@@ -37,10 +37,10 @@
       width:100px;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
-    .perfil.show {
+    .menu.show {
       display: flex;
     }
-    .perfil-toggle {
+    .menu-toggle {
       display: block;
     }
 }

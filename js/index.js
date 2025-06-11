@@ -1,6 +1,6 @@
-const togglePerfil = document.getElementById('perfil-toggle');
-const perfilMenu = document.getElementById('perfil-menu');
+const toggleMenu = document.getElementById('menu-toggle');
+const Menu = document.getElementById('menu');
 
-togglePerfil.addEventListener('click', () => {
-    perfilMenu.classList.toggle('show');
+toggleMenu.addEventListener('click', () => {
+    Menu.classList.toggle('show');
 });
