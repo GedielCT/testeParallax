@@ -1,0 +1,42 @@
+.fichaSuperior, .fichaInferior {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.inventario, .equipamento, .bonus, .caracSecund {
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    min-width: 200px;
+    align-items: center;
+}
+
+.informacoes,
+.habilidade {
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    min-width: 200px;
+    align-items: center;
+}
+
+.input {
+  width: 100%;         /* ocupa toda a largura disponível */
+  padding: 100px;       /* aumenta a altura visual */
+}
+
+.ficha {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  flex: 2;
+}
+
+label {
+    color: aliceblue;
+    size: 12px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}

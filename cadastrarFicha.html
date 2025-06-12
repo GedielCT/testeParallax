@@ -11,12 +11,55 @@
     <title>Parallax</title>   
 <!----------------------------------------->
 <!-- Links especificos da paginas -->
+    <link rel="stylesheet" href="css/cssEspecifico/cadastrarFicha.css">
 <!---------------------------------->   
 </head>
 <body>
 <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
     <menu-principal></menu-principal>
 <!--------------------------------->
+
+    <div class="fichaSuperior">    
+      <div class="informacoes">
+        <label for="info">Informações:</label>
+        <input id="info" type="text" class="input"/>
+      </div>
+      <div class="ficha">
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </div>
+      <div class="habilidade">
+        <label for="habilidade">Habilidade:</label>
+        <input id="habilidade" type="text" class="input"/>
+      </div>
+    </div>
+    <div class="fichaInferior">
+        <div class="inventario">
+            <label>Inventario:</label>
+            <input class="input"/>
+        </div>
+        <div class="equipamento">
+            <label>Equipamento:</label>
+            <input class="input"/>
+        </div>
+        <div class="bonus">
+            <label>Bonus</label>
+            <input class="input"/>
+        </div>
+        <div class="caracSecund">
+            <label>Caracteristica Secundaria:</label>
+            <input class="input"/>
+        </div>
+    </div>
+
     <script src="componentes/menuPrincipal.js"></script>
 </body>    
 </html>
