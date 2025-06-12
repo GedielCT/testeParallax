@@ -24,8 +24,9 @@
 }
 
 .input {
-  width: 100%;         /* ocupa toda a largura disponível */
-  padding: 100px;       /* aumenta a altura visual */
+  width: 100%;
+  height: 200px;         /* ocupa toda a largura disponível */
+  padding: 5px;       /* aumenta a altura visual */
 }
 
 .ficha {
