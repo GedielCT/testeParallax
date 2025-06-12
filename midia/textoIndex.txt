@@ -4,15 +4,18 @@ Este mundo foi estudado e formalmente nomeado de Absoluta, nome que representa o
 
 Existem 3 grandes continentes em Absoluta, estes são Sanus (localizado no meio do mapa-múndi), Anima (Leste) e Solitas (Norte). Além dos grandes continentes existem pequenas remanescentes ilhas as quais foram consideradas locais sagrados para a natureza. 
 
-/Sanus é divido entre duas grandes nações. 
+/Sanus é divido entre duas grandes nações.
+
     -Vox é a nação central do mundo, local onde cultura e tecnologia se misturam, buscando encontrar uma harmonia no mundo. Vox apresenta equilíbrio entre a riqueza e pobreza, o primeiro ministro escolhido por voto popular lidera a nação para transformar Vox em um local de esperanças que receba todos os indivíduos. Sua tecnologia é a segunda maior do mundo (muito parecido com o que temos), apenas atrás da nação que forneceu as bases de tecnologia para Vox. Sua cultura é abrangente, tendo muito provavelmente perdido suas próprias origens ao tentar abrigar o mundo inteiro, este é um grande tópico de discussão. Sua geografia é baseada em grandes planícies na parte central da nação e enormes cadeias de montanhas ao sul.
 
     -Vacuo é a nação vizinha de Vox, local infestado pela areia do deserto, local que por muitos é considerado vazio e desprovido de qualquer intelecto, devido a cultura brutal do local de tribos. Com um sol escaldante e Lua gélida o local rejeita qualquer vida saudável, muitas tentativas de interação já foram realizadas e nenhuma teve um resultado positivo. As tribos são ariscas ao mundo exterior e preferem viver em suas guerras de territórios. Poucos realmente sabem os acontecimentos dentro de Vacuo e muito menos possuem coragem de explorar a região.
     
 /Anima apesar de seu tamanho possuí apenas uma grande nação.
+
     -Vetus é a nação de cultura forte, raízes profundas e irremovíveis. A nação liderada pelos Patriarcas das grandes famílias recusam o imenso avanço tecnológico, mas mantém contato com o exterior. Guiados pela vontade de manter uma nação a qual jamais irá ceder pelas tentações do mundo exterior, a nação praticamente se tornou uma com a natureza, encontrando um equilíbrio perfeito das décadas. Sua "Tecnologia" é feita de recursos naturais fornecidos pela natureza de maneira harmônica e buscam apenas desenvolver o necessário para a sobrevivência de seu povo.
     
 /Solitas é o menor continente e também possuí apenas uma grande nação.
+
     -Verum é a nação que criou o conceito tecnologia, sua cultura é dependente de seus diversos avanços tecnológicos. Verum é o berço do avanço tecnológico, estando dezenas e talvez centenas de anos afrente de Vox, que só atingiu seu nível atual devido as trocas econômicas entre as nações. Local liderado por um grande líder "O Presidente", este que foi passado por gerações pelas mentes mais brilhantes no campo da tecnologia e no campo da política, um povo guiado por um líder sábio e respeitado. Verum é uma região infestada pela neve na maior parte do ano, porém problemas relacionados a neve já foram solucionados, montanhas e florestas foram varridas para abrirem espaço para uma expansão quase sem limites, suas enormes extratoras e fábricas ocupam grandes áreas. Verum preza sobre sua soberania no campo tecnológico, onde apenas para remover qualquer tipo de fabricação de Verum é necessário documentos para cada tipo de item.
 
 Agora que falamos do mundo num geral, existem os pequenos detalhes que irão girar a trama do RPG. 
