@@ -16,23 +16,9 @@
 </head>
 <body>
 <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
-    <div class="topnav">        
-        <div class="navegacao">
-            <a href="index.html">Home</a>
-            <a href="usarFicha.html">Usar Ficha</a>
-            <a href="cadastrarFicha.html">Cadastrar Ficha</a>
-        </div>
-        <div class="menu-container">
-            <button class="menu-toggle" id="menu-toggle">☰</button>
-            <div class="menu" id="menu">
-                <a href="login.html">Login</a>
-                <a href="singUp.html">Sing Up</a>
-                <a>Perfil</a>
-            </div>    
-        </div>
-    </div>
+    <menu-principal></menu-principal>
 <!--------------------------------->
-
+<!--
     <div class="topnav">
         <div class="navegacao">
             <a href="usarFicha.html">Escolher</a>
@@ -44,14 +30,16 @@
             <a href="X">Cancelar</a>
         </div>
     </div>
+-->
 
-    <person-card nome="João" habilidade="Força"></person-card>
-    <person-card nome="Gabrie" habilidade="Mente"></person-card>
-    <person-card></person-card>
-    <person-card></person-card>
-    <person-card></person-card>
-    <person-card></person-card>
+    <ficha-card nome="João" habilidade="Força"></ficha-card>
+    <ficha-card nome="Gabrie" habilidade="Mente"></ficha-card>
+    <ficha-card></ficha-card>
+    <ficha-card></ficha-card>
+    <ficha-card></ficha-card>
+    <ficha-card></ficha-card>
 
-    <script src="js/card.js"></script>
+    <script src="componentes/card.js"></script>
+    <script src="componentes/menuPrincipal.js"></script>
 </body>
 </html>

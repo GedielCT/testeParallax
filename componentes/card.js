@@ -1,4 +1,4 @@
-class PersonCard extends HTMLElement {
+class FichaCard extends HTMLElement {
   connectedCallback() {
     const nome = this.getAttribute("nome") || "";
     const habilidade = this.getAttribute("habilidade") || "";
@@ -28,4 +28,4 @@ class PersonCard extends HTMLElement {
     `;
   }
 }
-customElements.define("person-card", PersonCard);
+customElements.define("ficha-card", FichaCard);
