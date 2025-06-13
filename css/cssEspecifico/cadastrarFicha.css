@@ -49,9 +49,12 @@ textarea.input {
   .fichaInferior {
     flex-direction: column;
   }
-
   .ficha {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+
+    width: min(100%, 1000px); /* ocupa até 1000px, mas nunca mais que 100% */
   }
 }
 
