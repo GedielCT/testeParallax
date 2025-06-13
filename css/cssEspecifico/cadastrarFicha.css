@@ -18,6 +18,8 @@
 /* Inputs, Textareas e Selects maiores */
 .input,
 input[type="text"],
+input[type="date"],
+input[type="time"],
 textarea,
 select {
   padding: 12px;
@@ -27,15 +29,49 @@ select {
   margin-top: 6px;
   resize: vertical;
   width: 100%;
+  height: 70%;
   box-sizing: border-box;
 }
 
 /* Campo de ficha com grid para os 10 inputs */
 .ficha {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 10px;
-  flex: 100%;
+
+}
+
+.nome {
+  grid-column: span 7;
+}
+
+.status,
+.dano {
+  grid-column: span 2;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Título "STATUS", "DANO" */
+.status > label,
+.dano > label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+/* Subcampos internos como grid de 2 colunas */
+.status > div,
+.dano > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Ajusta textareas para ficarem mais altos */
@@ -51,7 +87,7 @@ textarea.input {
   }
   .ficha {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 10px;
 
     width: min(100%, 1000px); /* ocupa até 1000px, mas nunca mais que 100% */
