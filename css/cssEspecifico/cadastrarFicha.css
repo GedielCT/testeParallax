@@ -44,7 +44,7 @@ textarea.input {
 }
 
 /* Responsividade */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .fichaSuperior,
   .fichaInferior {
     flex-direction: column;
