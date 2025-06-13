@@ -1,39 +1,58 @@
-.fichaSuperior, .fichaInferior {
+/* Layout geral */
+.fichaSuperior,
+.fichaInferior {
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+  margin: 20px;
   flex-wrap: wrap;
-  padding: 10px;
 }
 
-.inventario, .equipamento, .bonus, .caracSecund {
-    display: flex;
-    flex-direction:column;
-    flex: 1;
-    min-width: 200px;
-    align-items: center;
+.fichaSuperior > div:not(.ficha),
+.fichaInferior > div {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
-.informacoes,
-.habilidade {
-    display: flex;
-    flex-direction:column;
-    flex: 1;
-    min-width: 200px;
-    align-items: center;
-}
-
-.input {
+/* Inputs, Textareas e Selects maiores */
+.input,
+input[type="text"],
+textarea,
+select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  resize: vertical;
   width: 100%;
-  height: 200px;         /* ocupa toda a largura disponível */
-  padding: 5px;       /* aumenta a altura visual */
+  box-sizing: border-box;
 }
 
+/* Campo de ficha com grid para os 10 inputs */
 .ficha {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 10px;
-  flex: 2;
+  flex: 100%;
+}
+
+/* Ajusta textareas para ficarem mais altos */
+textarea.input {
+  min-height: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+  .fichaSuperior,
+  .fichaInferior {
+    flex-direction: column;
+  }
+
+  .ficha {
+    grid-template-columns: 1fr;
+  }
 }
 
 label {
