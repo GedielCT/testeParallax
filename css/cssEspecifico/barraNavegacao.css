@@ -1,22 +1,25 @@
-/* BARRA DE NAVERAÇÃO SUPERIOR */
+/* Layout da barra de menu principal */
 .topnav {
     display: flex;
     background-color: #981C1E;
-    justify-content: space-between; /* SEPARA AS DUAS CLASSES ABAIXO */
+    justify-content: space-between; /* Separa NAVEGAÇÃO e MENU */
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navegacao { /* BOTÕES DA ESQUERDA */
+
+/* Botões da esquerda */
+.navegacao { 
     display: flex;
     gap: 5px;
 }
-.menu { /* BOTÕES DA DIREITA */
+
+/* Botões da direita */
+.menu { 
     display: center;
     gap: 5px;
 }
-.menu-container {
-    position: relative;
-}
+
+/* Layout do menu hambunguer */
 .menu-toggle {
     display: none;
     background: none;
@@ -26,7 +29,24 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+/* Layout dos botões */
+.topnav a { 
+    background-color: #981C1E;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 15px 6px;
+    border-radius: none;
+    display: inline-block;
+}
+
+/* Quando o mouse estiver em cima */
+.topnav a:hover {
+    background-color: #82181a;
+}
+
+/* Resposividade da barra de navegação */
+@media (max-width: 600px) { /* Quando ele vai ativar  */
     .menu {
       display: none;
       position: absolute;
@@ -45,16 +65,3 @@
       display: block;
     }
 }
-.topnav a { /* BOTÕES DA BARRA DE NAVEGAÇÃO SUPERIOR */
-    background-color: #981C1E;
-    text-decoration: none;
-    color: black;
-    border: none;
-    padding: 15px 6px;
-    border-radius: none;
-    display: inline-block;
-}
-.topnav a:hover {
-    background-color: #981C7E;
-}
-/*-------------------------------*/

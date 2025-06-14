@@ -1,17 +1,16 @@
+/* Layout do card */
 .card {
-  background-color: #a04d4e;
-  overflow: hidden;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-}
-
-.flex-container {
   display: flex;
   gap: 20px;
   align-items: center;
+  background-color: #a04d4e;
+  padding: 10px;
+  color: white;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Layout da imagem */
 .fakeimg {
   background-color: #aaa;
   width: 100px;
@@ -24,19 +23,22 @@
   justify-content: center;
 }
 
-.right-content {
+/* Layout das inofrmações */
+.informacoes {
   display: flex;
   flex-direction: column;
   gap: 10px;
   flex: 1; /* ocupa o restante do espaço */
 }
 
-.inputs {
+/* Layout do campo dos inputs */
+.campo {
   display: flex;
   flex-direction: column;
 }
 
-.input-text {
+/* Layout dos inputs */
+.input {
   width: 100%;
   padding: 5px;
   border: 1px solid #ccc;
@@ -52,7 +54,8 @@
   height: 100%; /* garante alinhamento com o container */
 }
 
-@media (max-width: 600px) {
+/* Responcividade de card */
+@media (max-width: 600px) { /* Ativa depois de determinado tamanho */
   .input-text {
     width: 100%;
   }
