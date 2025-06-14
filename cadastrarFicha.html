@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="midia/img/geral/logoParallax.png">
     <link rel="stylesheet" href="css/cssPadrao/reset-min.css">
+    <link rel="stylesheet" href="css/cssEspecifico/teste.css">
     <title>Parallax</title>   
 <!----------------------------------------->
 <!-- Links especificos da paginas -->
@@ -16,7 +17,35 @@
     <menu-principal></menu-principal>
 
 <!-- TABELA DA FICHA -->
-    <tabela-ficha></tabela-ficha>
+    <div class="fichaSuperior">
+        <tabela-ficha></tabela-ficha>
+    
+        <div class="informacoes">
+            <label for="info">Informações:</label>
+            <input id="info" type="text" class="input2"/>
+        </div>
+        <div class="habilidade">
+            <label>Habilidade:</label>
+            <input type="text" class="input2"/>
+        </div>
+            <div class="caracSecund">
+            <label>Caracteristica Secundaria:</label>
+            <input class="input2"/>
+        </div>
+            <div class="inventario">
+            <label>Inventario:</label>
+            <input class="input2"/>
+        </div>
+        <div class="equipamento">
+            <label>Equipamento:</label>
+            <input class="input2"/>
+        </div>
+        <div class="bonus">
+            <label>Bonus</label>
+            <input class="input2"/>
+        </div>    
+        
+    </div>
 
     <script type="module" src="componentes/tabelaFicha.js"></script>
     <script src="componentes/menuPrincipal.js"></script>  

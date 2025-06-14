@@ -1,0 +1,17 @@
+.fichaSuperior > div:not(.ficha) {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.input2 {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 0;
+  max-width: 100%;
+}
