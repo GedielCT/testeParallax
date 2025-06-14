@@ -4,8 +4,10 @@
     grid-template-columns: repeat(auto-fit, minmax(5fr, 1fr));
     gap: 10px;
     max-width: 800px;
-    margin: 10px;
+    margin: 10px auto;
     width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* Subcampos internos como grid de 2 colunas */
@@ -23,7 +25,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: auto;
+  min-width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .nome {
@@ -42,6 +46,7 @@
   width: 100%;
   box-sizing: border-box;
   min-height: 0;
+  max-width: 100%;
 }
 
 /* Inputs específicos de .status e .dano */
