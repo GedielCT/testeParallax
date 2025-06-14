@@ -1,7 +1,7 @@
 /* Ficha com grid para os campos */
 .ficha {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 190px)); /* Tamanho minimo que as colunas devem ter */
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* Tamanho minimo que as colunas devem ter */
     gap: 10px;
     max-width: 820px; /* Tamanho maximo da tabela */
     padding: 15px; 
@@ -80,7 +80,7 @@ label {
 /* Responsividade da tabela */
 @media (max-width: 820px) { /* Defini a partir de que tamanho vai denifir as configs */
     .ficha {
-        grid-template-columns: 1fr; /* Deixa tudo empilhado */
+        grid-template-columns: 2fr; /* Deixa tudo empilhado */
     }
 
     .status > div {
