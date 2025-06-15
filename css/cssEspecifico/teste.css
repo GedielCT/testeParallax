@@ -1,17 +1,52 @@
-.fichaSuperior > div:not(.ficha) {
+.fichaSuperior {
   display: flex;
+  flex-wrap: wrap; /* permite que os campos quebrem linha */
   gap: 20px;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  max-width: 100%; /* garante que o container não ultrapasse a tela */
+  box-sizing: border-box;
   padding: 10px;
 }
 
-.input2 {
+.campoGrande {
+  flex: 1 1 300px; /* cresce, encolhe, largura mínima de 300px */
+  min-width: 400px; /* impede que fique muito pequeno */
+  max-width: 100%; /* impede que ultrapasse o tamanho da tela */
+  min-height: 400px; /* impede que fique muito pequeno */
+  max-height: 480px; /* limite de altura */
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #ccc;
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
   box-sizing: border-box;
-  min-height: 0;
-  max-width: 100%;
+}
+
+.caracSecund {
+  overflow-x: auto; /* barra de rolagem horizontal se necessário */
+}
+
+.option {
+  display: flex;
+  padding: 10px;
+  align-items: center; /* alinha verticalmente */
+  gap: 8px; /* espaço entre o radio e o label */
+}
+
+
+.inputCampo {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  width: 100%; /* ocupa todo o campo */
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsividade */
+@media (max-width: 820px) {
+  .fichaSuperior{
+    flex-direction: column;
+  }
 }
