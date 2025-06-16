@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="midia/img/geral/logoParallax.png">
     <link rel="stylesheet" href="css/cssPadrao/reset-min.css">
-    <link rel="stylesheet" href="css/cssEspecifico/teste.css">
+    <link rel="stylesheet" href="css/cssEspecifico/ficha.css">
     <title>Parallax</title>   
 <!----------------------------------------->
 <!-- Links especificos da paginas -->
@@ -22,112 +22,19 @@
  
         <div class="campoGrande">
             <label>Habilidade:</label>
-            <!-- Card -->
-            <div class="card">
-            
-                <!-- Futuramente ira vir uma imagem -->
-                <div class="fakeimg inputs">Image</div>
-            
-                <!-- Separa os inputs do restante -->
-                <div class="habilidade">                
-                    <!-- Campo NOME -->
-                    <div class="campo">
-                        <label>Nome:</label>                   
-                        <!-- Mostra o nome que foi passado -->
-                        <input type="text" class="inputHabilidade" />
-                    </div>
-                    <!-- Campo HABILIDADE -->
-                    <div class="campo">
-                        <label>Descrição:</label>
-                        <!-- Mostra a habilidade que foi passado -->
-                        <input type="text" class="inputHabilidade"/>
-                    </div>
+            <div class="rolagem">
+                <!-- Container onde os cards aparecerão -->
+                <div id="skills-container">
+                  <card-skill></card-skill>
                 </div>
-
-                <div class="informacoes">
-                    <div class="campo">
-                        <label>Custo:</label>
-                        <input type="text" class="inputHabilidade"/>
-                    </div>
-                    <div class="campo">
-                        <label>Qtd usado:</label>
-                        <input type="text" class="inputHabilidade"/>
-                    </div>
-                </div>
+            
+                <!-- Botão para adicionar mais -->
+                <button id="adicionar-skill">Adicionar Habilidade</button>
             </div>
         </div>
         <div class="campoGrande">
             <label>Caracteristica Secundaria:</label>
-            <div class="caracSecund">    
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-                <div class="option">
-                    <input type="radio"/>
-                    <label>Teste</label>
-                </div>
-            </div>
+            <carac-secund class="rolagem"></carac-secund>
         </div>
         <div class="campoGrande">
             <label for="info">Informações:</label>
@@ -147,7 +54,16 @@
         </div>           
     </div>
 
+    <script>
+        document.getElementById("adicionar-skill").addEventListener("click", () => {
+        const container = document.getElementById("skills-container");
+        const novoCard = document.createElement("card-skill");
+        container.appendChild(novoCard);
+        });
+    </script>
     <script type="module" src="componentes/tabelaFicha.js"></script>
+    <script type="module" src="componentes/cardSkill.js"></script>
+    <script type="module" src="componentes/caracSecud.js"></script>
     <script src="componentes/menuPrincipal.js"></script>  
 </body>    
 </html>

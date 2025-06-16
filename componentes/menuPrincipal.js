@@ -1,6 +1,11 @@
 class MenuPrincipal extends HTMLElement {
-    connectedCallback(){
-        this.innerHTML = `
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+    }
+
+    connectedCallback() {
+        this.shadowRoot.innerHTML = `
                 <!-- CSS menu principal -->
                 <link rel="stylesheet" href="css/cssEspecifico/barraNavegacao.css">
                 

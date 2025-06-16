@@ -1,10 +1,15 @@
 class FichaCard extends HTMLElement {
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+    }
+        
   connectedCallback() {
     const nome = this.getAttribute("nome") || ""; /* Pega o nome que foi passado */
     const habilidade = this.getAttribute("habilidade") || ""; /* Pega a habilidade que foi passado */
     const checked = this.hasAttribute("ativo"); /* Pega o status do checkbox que foi passado */
 
-    this.innerHTML = `
+    this.shadowRoot.innerHTML = `
       <!-- CSS cars -->
       <link rel="stylesheet" href="css/cssEspecifico/card.css">
 
