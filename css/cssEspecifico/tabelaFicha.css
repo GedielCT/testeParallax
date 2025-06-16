@@ -89,4 +89,8 @@ label {
     .nome, .dinheiro {
         grid-column: span 2; /* Tamanho dos campos */
     }
+
+    .xp, .classe {
+      grid-column: span 1; /* Tamanho dos campos */
+    }
 }

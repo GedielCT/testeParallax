@@ -10,71 +10,71 @@ class caracSecund extends HTMLElement {
             <link rel="stylesheet" href="css/cssEspecifico/ficha.css">
     
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
                 <div class="option">
-                    <input type="radio"/>
+                    <input type="checkbox"/>
                     <label>Teste</label>
                 </div>
         `;
