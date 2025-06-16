@@ -82,10 +82,6 @@ label {
         grid-template-columns: 2fr; /* Deixa tudo empilhado */
     }
 
-    .status > div {
-        grid-template-columns: 1fr; /* Labels ficam acima dos inputs */
-    }
-
     .nome, .dinheiro {
         grid-column: span 2; /* Tamanho dos campos */
     }
