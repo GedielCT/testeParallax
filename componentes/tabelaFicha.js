@@ -91,7 +91,7 @@ class tabelaFicha extends HTMLElement {
                     <div><label>Agilidade:</label><input type="text"></div>
                     <div><label>Foco:</label><input type="text"></div>
                     <div><label>Sabedoria:</label><input type="text"></div>
-                    <div><label>Constituição:</label><input type="text"></div>
+                    <div><label>Consti.:</label><input type="text"></div>
                     <div><label>Carisma:</label><input type="text"></div>
                 </div>
 
@@ -102,7 +102,7 @@ class tabelaFicha extends HTMLElement {
                     <div><label>Agilidade:</label><input type="text"></div>
                     <div><label>Foco:</label><input type="text"></div>
                     <div><label>Sabedoria:</label><input type="text"></div>
-                    <div><label>Constituição:</label><input type="text"></div>
+                    <div><label>Consti.:</label><input type="text"></div>
                     <div><label>Carisma:</label><input type="text"></div>
                 </div>
             </div>

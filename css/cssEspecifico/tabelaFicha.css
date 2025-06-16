@@ -1,9 +1,9 @@
 /* Ficha com grid para os campos */
 .ficha {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* Tamanho minimo que as colunas devem ter */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Tamanho minimo que as colunas devem ter */
     gap: 10px;
-    max-width: 820px; /* Tamanho maximo da tabela */
+    max-width: 690px; /* Tamanho maximo da tabela */
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -54,7 +54,7 @@
 /* Inputs específicos de .status e .dano */
 .status input,
 .status select {
-    width: 100%;
+    width: 60px;
     box-sizing: border-box;
     border-radius: 6px;
     border: 1px solid #ccc;
@@ -77,7 +77,7 @@ label {
 }
 
 /* Responsividade da tabela */
-@media (max-width: 840px) { /* Defini a partir de que tamanho vai denifir as configs */
+@media (max-width: 690px) { /* Defini a partir de que tamanho vai denifir as configs */
     .ficha {
         grid-template-columns: 2fr; /* Deixa tudo empilhado */
     }
@@ -88,9 +88,5 @@ label {
 
     .nome, .dinheiro {
         grid-column: span 2; /* Tamanho dos campos */
-    }
-
-    .xp, .classe {
-      grid-column: span 1; /* tamanho dos campos */
     }
 }

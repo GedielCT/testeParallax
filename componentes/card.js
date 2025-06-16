@@ -27,7 +27,7 @@ class FichaCard extends HTMLElement {
             <label>Nome:</label>
 
             <!-- Mostra o nome que foi passado -->
-            <input type="text" class="input" value="${nome}" />
+            <input type="text" class="input" value="${nome}" readonly />
           </div>
 
           <!-- Campo HABILIDADE -->
@@ -35,7 +35,7 @@ class FichaCard extends HTMLElement {
             <label>Habilidade:</label>
 
             <!-- Mostra a habilidade que foi passado -->
-            <input type="text" class="input" value="${habilidade}" />
+            <input type="text" class="input" value="${habilidade}" readonly />
           </div>
         </div>
 
@@ -44,6 +44,11 @@ class FichaCard extends HTMLElement {
       </div>
 
     `;
+    // Redirecionar ao clicar no card
+    this.shadowRoot.querySelector('.card').addEventListener('click', () => {
+      // Aqui você pode passar parâmetros na URL
+      window.location.href = "cadastrarFicha.html";
+    });
   }
 }
 customElements.define("ficha-card", FichaCard);
