@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/png" href="midia/img/geral/logoParallax.png">
     <link rel="stylesheet" href="css/cssPadrao/reset-min.css">
     <link rel="stylesheet" href="css/cssEspecifico/ficha.css">
+    <link href="https://cdn.jsdelivr.net/npm/quill@1.3.6/dist/quill.snow.css" rel="stylesheet">
     <title>Parallax</title>   
 <!----------------------------------------->
 <!-- Links especificos da paginas -->
@@ -21,7 +22,10 @@
         <tabela-ficha></tabela-ficha>
  
         <div class="campoGrande">
-            <label>Habilidade:</label>
+            <div>
+                <label>Habilidade:</label>
+                <input class="inputHabilidade"/>
+            </div>
             <div class="rolagem">
                 <!-- Container onde os cards aparecerão -->
                 <div id="skills-container">
@@ -29,17 +33,13 @@
                 </div>
             
                 <!-- Botão para adicionar mais -->
-                <button id="adicionar-skill">Adicionar Habilidade</button>
+                <button id="adicionar-skill" class="addSkill">Adicionar Habilidade</button>
             </div>
         </div>
         <div class="campoGrande">
             <label>Caracteristica Secundaria:</label>
             <carac-secund class="rolagem"></carac-secund>
         </div>
-        <div class="campoGrande">
-            <label for="info">Informações:</label>
-            <textarea type="text" class="inputCampo"></textarea>
-        </div> 
         <div class="campoGrande">
             <label>Inventario:</label>
             <textarea type="text" class="inputCampo"></textarea>
@@ -49,9 +49,9 @@
             <textarea type="text" class="inputCampo"></textarea>
         </div>
         <div class="campoGrande">
-            <label>Bonus</label>
-            <textarea type="text" class="inputCampo"></textarea>
-        </div>           
+            <label for="info">Lore:</label>
+            <div id="editor-container" class="inputCampo"></div>
+        </div>        
     </div>
 
     <script>
@@ -59,6 +59,22 @@
         const container = document.getElementById("skills-container");
         const novoCard = document.createElement("card-skill");
         container.appendChild(novoCard);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/quill@1.3.6/dist/quill.js"></script>
+    <script>
+        const quill = new Quill('#editor-container', {
+        theme: 'snow',
+            modules: {
+                toolbar: [
+                    [{ 'header': '1' }, { 'header': '2' }, { 'font': [] }],
+                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                    ['bold', 'italic', 'underline'],
+                    ['link', 'image'],
+                    [{ 'align': [] }],
+                    ['clean']
+                ]
+            }
         });
     </script>
     <script type="module" src="componentes/tabelaFicha.js"></script>

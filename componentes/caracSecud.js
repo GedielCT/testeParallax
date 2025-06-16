@@ -1,7 +1,11 @@
 class caracSecund extends HTMLElement {
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+    }
 
     connectedCallback() {
-        this.innerHTML = `
+        this.shadowRoot.innerHTML = `
             <!-- CSS da tabela da ficha -->
             <link rel="stylesheet" href="css/cssEspecifico/ficha.css">
     

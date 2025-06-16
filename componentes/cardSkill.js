@@ -29,9 +29,6 @@ class cardSkill extends HTMLElement {
                         <!-- Mostra a habilidade que foi passado -->
                         <input type="text" class="inputHabilidade"/>
                     </div>
-
-                    <!-- Botão de remover -->
-                    <button class="remover">🗑️</button>
                 </div>
 
                 <div class="informacoes">
@@ -41,12 +38,15 @@ class cardSkill extends HTMLElement {
                     </div>
                     <div class="campo">
                         <label>Tipo:</label>
-                        <select class="input">
-                            <option>N</option>
-                            <option>U</option>
+                        <select class="inputHabilidade">
+                            <option>Normal</option>
+                            <option>Ultimato</option>
                         </select>
                     </div>
                 </div>
+                    
+                <!-- Botão de remover -->
+                <button class="remover">🗑️</button>
             </div>
         `;
 
