@@ -54,3 +54,64 @@ button.remover:hover {
 button.remover:active {
   transform: scale(0.95);
 }
+
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.modal-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 100%;
+}
+
+.poppup {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.poppup:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.poppup:active {
+  transform: scale(0.95);
+}
+
+.inputCampo {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  resize: vertical;
+  width: 100%; /* ocupa todo o campo */
+  height: 100%;
+  box-sizing: border-box;
+  resize: none;
+}

@@ -19,11 +19,11 @@
 
 /* Defini o tamanho do input NOME */
 .nome {
-  grid-column: span 5;
+  grid-column: span 4;
 }
 
 /* Defini o tamanho do input XP, CLASSE, DINHEIRO */
-.xp, .classe, .dinheiro {
+.dinheiro {
   grid-column: span 2;
 }
 
@@ -40,9 +40,9 @@
   box-sizing: border-box;
 }
 
-/* Inputs, Textareas e Selects maiores */
+/* Inputs e Selects maiores */
 .input {
-  padding: 10px;
+  padding: 5px;
   border-radius: 6px;
   border: 1px solid #ccc;
   width: 100%;
@@ -74,6 +74,7 @@ label {
   font-size: 16px;
   color: #fff;
   margin-bottom: 4px;
+  align-self: center;
 }
 
 /* Responsividade da tabela */

@@ -27,8 +27,19 @@ class cardSkill extends HTMLElement {
                     <div class="campo">
                         <label>Descrição:</label>
                         <!-- Mostra a habilidade que foi passado -->
-                        <input type="text" class="inputHabilidade"/>
+                        <input type="text" class="inputHabilidade" id="descricaoInput" readonly/>
                     </div>
+
+                    <!-- Modal -->
+                    <div id="descricaoModal" class="modal" style="display: none;">
+                        <div class="modal-content">
+                            <textarea id="descricaoTextarea" class="inputCampo" rows="10" cols="50"></textarea>
+                            <div class="modal-buttons">
+                                <button id="confirmarDescricao" class="poppup">Confirmar</button>
+                                <button id="fecharModal" class="poppup">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>                   
                 </div>
 
                 <div class="informacoes">
@@ -49,6 +60,31 @@ class cardSkill extends HTMLElement {
                 <button class="remover">🗑️</button>
             </div>
         `;
+
+        // Elementos
+        const descricaoInput = this.shadowRoot.querySelector('#descricaoInput');
+        const descricaoModal = this.shadowRoot.querySelector('#descricaoModal');
+        const descricaoTextarea = this.shadowRoot.querySelector('#descricaoTextarea');
+        const confirmarDescricao = this.shadowRoot.querySelector('#confirmarDescricao');
+        const fecharModal = this.shadowRoot.querySelector('#fecharModal');
+
+        // Abrir o modal
+        descricaoInput.addEventListener('click', () => {
+            descricaoTextarea.value = descricaoInput.value;
+            descricaoModal.style.display = 'flex';
+        });
+
+        // Confirmar a edição
+        confirmarDescricao.addEventListener('click', () => {
+            descricaoInput.value = descricaoTextarea.value;
+            descricaoModal.style.display = 'none';
+        });
+
+        // Cancelar a edição
+        fecharModal.addEventListener('click', () => {
+            descricaoModal.style.display = 'none';
+        });
+
 
         // Evento para remover o componente ao clicar no botão
         this.shadowRoot.querySelector('.remover').addEventListener('click', () => {
