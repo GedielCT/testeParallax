@@ -11,13 +11,13 @@ class FichaCard extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
       <!-- CSS cars -->
-      <link rel="stylesheet" href="css/cssEspecifico/card.css">
+      <link rel="stylesheet" href="css/cssEspecifico/cardFicha.css">
 
       <!-- Card -->
       <div class="card">
 
         <!-- Futuramente ira vir uma imagem -->
-        <div class="fakeimg inputs">Image</div>
+        <div class="imagem "><label>Image</label></div>
 
         <!-- Separa os inputs do restante -->
         <div class="informacoes">
@@ -27,7 +27,7 @@ class FichaCard extends HTMLElement {
             <label>Nome:</label>
 
             <!-- Mostra o nome que foi passado -->
-            <input type="text" class="input" value="${nome}" readonly />
+            <div class="input"><span>${nome}</span></div>            
           </div>
 
           <!-- Campo HABILIDADE -->
@@ -35,7 +35,7 @@ class FichaCard extends HTMLElement {
             <label>Habilidade:</label>
 
             <!-- Mostra a habilidade que foi passado -->
-            <input type="text" class="input" value="${habilidade}" readonly />
+            <div class="input"><span>${habilidade}</span></div> 
           </div>
         </div>
 
@@ -45,10 +45,10 @@ class FichaCard extends HTMLElement {
 
     `;
     // Redirecionar ao clicar no card
-    this.shadowRoot.querySelector('.card').addEventListener('click', () => {
+    this.shadowRoot.querySelector('.informacoes').addEventListener('click', () => {
       // Aqui você pode passar parâmetros na URL
       window.location.href = "cadastrarFicha.html";
     });
   }
 }
-customElements.define("ficha-card", FichaCard);
+customElements.define("card-ficha", FichaCard);
