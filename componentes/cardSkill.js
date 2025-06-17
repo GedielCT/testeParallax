@@ -13,7 +13,8 @@ class cardSkill extends HTMLElement {
             <div class="card">
             
                 <!-- Futuramente ira vir uma imagem -->
-                <div class="fakeimg">Image</div>
+                <div class="imagem" id="imagemPreview"><label>Imagem</label></div>
+                <input type="file" id="imagemInput" accept="image/*" style="display: none;">
             
                 <!-- Separa os inputs do restante -->
                 <div class="habilidade">                
@@ -89,6 +90,24 @@ class cardSkill extends HTMLElement {
         // Evento para remover o componente ao clicar no botão
         this.shadowRoot.querySelector('.remover').addEventListener('click', () => {
             this.remove();
+        });
+
+        const fakeimg = this.shadowRoot.getElementById("imagemPreview");
+        const input = this.shadowRoot.getElementById("imagemInput");
+
+        fakeimg.addEventListener("click", () => {
+          input.click(); // Dispara o input file
+        });
+
+        input.addEventListener("change", function () {
+          const file = this.files[0];
+          if (file) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              fakeimg.innerHTML = `<img src="${e.target.result}" style="max-width: 100%; max-height: 100%;">`;
+            };
+            reader.readAsDataURL(file);
+          }
         });
 
     }
