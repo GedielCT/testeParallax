@@ -47,7 +47,7 @@ class FichaCard extends HTMLElement {
     // Redirecionar ao clicar no card
     this.shadowRoot.querySelector('.informacoes').addEventListener('click', () => {
       // Aqui você pode passar parâmetros na URL
-      window.location.href = "cadastrarFicha.html";
+      window.location.href = "fichaUtilizada.html";
     });
   }
 }

@@ -35,8 +35,8 @@ class MenuPrincipal extends HTMLElement {
                 </div>
         `;
 
-        const toggleMenu = this.querySelector('#menu-toggle'); /* Defini a class menu-toggle */
-        const menu = this.querySelector('#menu'); /* Defini a class menu */
+        const toggleMenu = this.shadowRoot.querySelector('#menu-toggle'); /* Defini a class menu-toggle */
+        const menu = this.shadowRoot.querySelector('#menu'); /* Defini a class menu */
 
         /* Quando menu-toggle por clicado vai mostrar menu */
         if (toggleMenu) {

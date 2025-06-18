@@ -138,37 +138,6 @@
     margin-bottom: 5px; /* pode ajustar o valor conforme desejar */
 }
 
-/* Layout da barra de menu principal */
-.topnav {
-    display: flex;
-    background-color: #981C1E;
-    justify-content: space-between; /* Separa NAVEGAÇÃO e MENU */
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Botões da esquerda */
-.navegacao { 
-    display: flex;
-    gap: 5px;
-}
-
-/* Layout dos botões */
-.topnav a { 
-    background-color: #981C1E;
-    text-decoration: none;
-    color: white;
-    border: none;
-    padding: 15px 6px;
-    border-radius: none;
-    display: inline-block;
-}
-
-/* Quando o mouse estiver em cima */
-.topnav a:hover {
-    background-color: #82181a;
-}
-
 /* Responsividade */
 @media (max-width: 820px) {
   .fichaSuperior{
