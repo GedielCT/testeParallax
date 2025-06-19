@@ -18,11 +18,27 @@ class cardSkill extends HTMLElement {
             
                 <!-- Separa os inputs do restante -->
                 <div class="habilidade">                
-                    <!-- Campo NOME -->
-                    <div class="campo">
-                        <label>Nome:</label>                   
-                        <!-- Mostra o nome que foi passado -->
-                        <input type="text" class="inputHabilidade" />
+                    <div class="informacoes">
+                        <!-- Campo NOME -->
+                        <div class="campo">
+                            <label>Nome:</label>         
+                            <!-- Mostra o nome que foi passado -->
+                            <input type="text" class="inputHabilidade" />
+                        </div>
+
+                        <div class="informacoes">
+                            <div class="campoInfo">
+                                <label>Custo:</label>
+                                <input type="text" class="inputHabilidade"/>
+                            </div>
+                            <div class="campoInfo">
+                                <label>Tipo:</label>
+                                <select class="inputHabilidade">
+                                    <option>N</option>
+                                    <option>U</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                     <!-- Campo HABILIDADE -->
                     <div class="campo">
@@ -41,20 +57,6 @@ class cardSkill extends HTMLElement {
                             </div>
                         </div>
                     </div>                   
-                </div>
-
-                <div class="informacoes">
-                    <div class="campo">
-                        <label>Custo:</label>
-                        <input type="text" class="inputHabilidade"/>
-                    </div>
-                    <div class="campo">
-                        <label>Tipo:</label>
-                        <select class="inputHabilidade">
-                            <option>Normal</option>
-                            <option>Ultimato</option>
-                        </select>
-                    </div>
                 </div>
                     
                 <!-- Botão de remover -->

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../../midia/img/geral/logoParallax.png">
     <link rel="stylesheet" href="../../css/cssPadrao/reset-min.css">
-    <link rel="stylesheet" href="../../css/cssEspecifico/ficha.css">
+    <link rel="stylesheet" href="../../css/cadastro/ficha.css">
     <link rel="stylesheet" href="../../css/cssEspecifico/barraNavegacao.css">
     <title>Parallax</title>   
 <!----------------------------------------->
@@ -16,17 +16,8 @@
 <body style="background-color: #111111">
 <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
     <menu-principal></menu-principal>
+    <menu-cadastro></menu-cadastro>
 
-                <!-- Div da barra de menu -->
-                <div class="topnav">         
-                    <!-- Botões da esquerda -->
-                    <div class="navegacao">
-                        <a href="ficha.html" class="botaoNav">Ficha</a>
-                        <a href="outros.html" class="botaoNav">Outros</a>
-                        <a href="ficha.html" class="botaoNav">Salvar</a>
-                        <a href="ficha.html" class="botaoNav">Cancelar</a>
-                    </div>
-                </div>
 
 <!-- TABELA DA FICHA -->
     <div class="fichaSuperior">  
@@ -37,21 +28,7 @@
 
         <tabela-ficha></tabela-ficha>
  
-        <div class="campoGrande">
-            <div>
-                <label class="labelHabilidade">Habilidade:</label>
-                <input class="inputHabilidade"/>
-            </div>
-            <div class="rolagem">
-                <!-- Container onde os cards aparecerão -->
-                <div id="skills-container">
-                  <card-skill></card-skill>
-                </div>
-            
-                <!-- Botão para adicionar mais -->
-                <button id="adicionar-skill" class="addSkill">Adicionar Habilidade</button>
-            </div>
-        </div>
+
     </div>
     <div class="fichaSuperior">
         <div class="campoGrande">
@@ -65,11 +42,7 @@
         <div class="campoGrande">
             <label class="labelStatus">Bonus:</label>
             <textarea type="text" class="inputCampo"></textarea>
-        </div>
-        <div class="campoGrande">
-            <label class="labelStatus">Caracteristica Secundaria:</label>
-            <carac-secund class="rolagem"></carac-secund>
-        </div>     
+        </div>  
     </div>
 
     <script>
@@ -80,8 +53,7 @@
         });
     </script>
     <script type="module" src="../../componentes/tabelaFicha.js"></script>
-    <script type="module" src="../../componentes/cardSkill.js"></script>
-    <script type="module" src="../../componentes/caracSecud.js"></script>
+    <script src="../../componentes/menuCadastro.js"></script>
     <script src="../../componentes/menuPrincipal.js"></script>  
 </body>    
 </html>
