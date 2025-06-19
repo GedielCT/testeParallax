@@ -12,7 +12,22 @@
   min-width: 400px; /* impede que fique muito pequeno */
   max-width: 100%; /* impede que ultrapasse o tamanho da tela */
   min-height: 400px; /* impede que fique muito pequeno */
-  max-height: 430px; /* limite de altura */
+  max-height: 100%; /* limite de altura */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.07);
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.campoOutros {
+  flex: 1 1 300px; /* cresce, encolhe, largura mínima de 300px */
+  min-width: 400px; /* impede que fique muito pequeno */
+  max-width: 100%; /* impede que ultrapasse o tamanho da tela */
+  min-height: 800px; /* impede que fique muito pequeno */
+  max-height: 100%; /* limite de altura */
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -23,6 +38,7 @@
 }
 
 .rolagem {
+  height: 350px;
   overflow-x: auto; /* barra de rolagem horizontal se necessário */
 }
 
@@ -136,6 +152,19 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     display: block;
     margin-bottom: 5px; /* pode ajustar o valor conforme desejar */
+}
+
+.imagem {
+  background-color: #dc3545;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsividade */

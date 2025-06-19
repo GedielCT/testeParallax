@@ -7,7 +7,7 @@ class cardSkill extends HTMLElement {
     connectedCallback() {
         this.shadowRoot.innerHTML = `
             <!-- CSS da tabela da ficha -->
-            <link rel="stylesheet" href="css/cssEspecifico/cardSkill.css">
+            <link rel="stylesheet" href="../../css/cssEspecifico/cardSkill.css">
 
             <!-- Card -->
             <div class="card">
@@ -125,7 +125,7 @@ class cardSkillUtilizado extends HTMLElement {
     connectedCallback() {
         this.shadowRoot.innerHTML = `
             <!-- CSS da tabela da ficha -->
-            <link rel="stylesheet" href="css/cssEspecifico/cardSkill.css">
+            <link rel="stylesheet" href="../../css/cssEspecifico/cardSkill.css">
 
             <!-- Card -->
             <div class="card">
@@ -135,16 +135,29 @@ class cardSkillUtilizado extends HTMLElement {
                 <input type="file" id="imagemInput" accept="image/*" style="display: none;">
             
                 <!-- Separa os inputs do restante -->
-                <div class="habilidade">                
-                    <!-- Campo NOME -->
-                    <div class="campo">
-                        <label>Nome:</label>                   
-                        <!-- Mostra o nome que foi passado -->
-                        <input type="text" class="inputHabilidade" />
+                <div class="habilidade"> 
+                
+                    <div class="informacoes">
+                        <!-- Campo NOME -->
+                        <div class="campo">         
+                            <!-- Mostra o nome que foi passado -->
+                            <input type="text" class="inputHabilidade" />
+                        </div>
+
+                        <div class="informacoes">
+                            <div class="campoInfo">
+                                <label>Custo:</label>
+                                <input type="text" class="inputHabilidade"/>
+                            </div>
+                            <div class="campoInfo">
+                                <label>Util:</label>
+                                <input type="text" class="inputHabilidade"/>
+                            </div>
+                        </div>
                     </div>
+                    
                     <!-- Campo HABILIDADE -->
                     <div class="campo">
-                        <label>Descrição:</label>
                         <!-- Mostra a habilidade que foi passado -->
                         <input type="text" class="inputHabilidade" id="descricaoInput" readonly/>
                     </div>
@@ -160,19 +173,6 @@ class cardSkillUtilizado extends HTMLElement {
                     </div>                   
                 </div>
 
-                <div class="informacoes">
-                    <div class="campo">
-                        <label>Custo:</label>
-                        <input type="text" class="inputHabilidade"/>
-                    </div>
-                    <div class="campo">
-                        <label>Tipo:</label>
-                        <select class="inputHabilidade">
-                            <option>Normal</option>
-                            <option>Ultimato</option>
-                        </select>
-                    </div>
-                </div>
             </div>
         `;
 

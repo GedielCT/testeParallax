@@ -29,14 +29,47 @@
     cursor: pointer;
 }
 
+/* Layout do menu hambunguer */
+.menu-info {
+    background-color: #981C1E;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.menu-info a:hover {
+    background-color: #82181a;
+}
+
+/* Layout do menu hambunguer */
+.menu-infor {
+    display: none; /* Escondido por padrão */
+    position: absolute; /* Sai do fluxo da barra */
+    top: 40px; /* Distância do topo (ajuste para onde você quer que apareça) */
+    left: 200px; /* Distância da esquerda */
+    background: #444; /* Cor de fundo para destacar */
+    padding: 5px;
+    border-radius: 6px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-infor.show {
+    display: flex; /* Ou block, dependendo de como você quer mostrar */
+}
+
 /* Layout dos botões */
-.topnav a { 
+.botaoNav { 
     background-color: #981C1E;
     text-decoration: none;
     color: white;
     border: none;
     padding: 15px 6px;
-    border-radius: none;
+    border-radius: 6px;
     display: inline-block;
 }
 
@@ -55,6 +88,7 @@
       background: #444;
       flex-direction: column;
       padding: 5px;
+      border-radius: 6px;
       width:100px;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }

@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Tamanho minimo que as colunas devem ter */
     gap: 10px;
-    max-width: 690px; /* Tamanho maximo da tabela */
+    max-width: 850px; /* Tamanho maximo da tabela */
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -19,11 +19,16 @@
 
 /* Defini o tamanho do input NOME */
 .nome {
-  grid-column: span 4;
+  grid-column: span 5;
 }
 
 /* Defini o tamanho do input XP, CLASSE, DINHEIRO */
 .dinheiro {
+  grid-column: span 3;
+}
+
+.xp,
+.status button {
   grid-column: span 2;
 }
 
@@ -53,12 +58,19 @@
 
 /* Inputs específicos de .status e .dano */
 .status input,
-.status select {
-    width: 60px;
+.status select,
+.status button {
+    width: 100%;
     box-sizing: border-box;
     border-radius: 6px;
     border: 1px solid #ccc;
-    padding: 5px;
+    padding: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.status button:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
 }
 
 /* Layout das labels */

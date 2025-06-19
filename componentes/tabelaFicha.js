@@ -7,7 +7,7 @@ class tabelaFicha extends HTMLElement {
     connectedCallback(){
         this.shadowRoot.innerHTML = `
             <!-- CSS da tabela da ficha -->
-            <link rel="stylesheet" href="css/cssEspecifico/tabelaFicha.css">
+            <link rel="stylesheet" href="../../css/cssEspecifico/tabelaFicha.css">
 
             <!-- TABELA DA FICHA -->
             <div class="ficha">
@@ -30,6 +30,33 @@ class tabelaFicha extends HTMLElement {
                     <input type="time" class="input"/>                
                 </div>
 
+                <!-- DINHEIRO -->
+                <div class="dinheiro">
+                    <label>Dinheiro:</label>
+                    <input type="text" class="input"/>
+                </div>
+
+                <!-- CLASSE -->
+                <div class="classe">
+                    <label>Classe</label>
+                    <select class="input">
+                        <option>Singularidade</option>
+                        <option>Energia</option>
+                        <option>Regular</option>
+                    </select>
+                </div>
+
+                <!-- GRAU -->
+                <div class="grau">
+                    <label>Grau:</label>
+                    <select class="input">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+
                 <!-- NIVEL -->
                 <div class="nivel">    
                     <label>Nível:</label>
@@ -42,28 +69,6 @@ class tabelaFicha extends HTMLElement {
                     <input type="text" class="input"/>
                 </div>
 
-                <!-- DINHEIRO -->
-                <div class="dinheiro">
-                    <label>Dinheiro:</label>
-                    <input type="text" class="input"/>
-                </div>
-
-                <!-- GRAU -->
-                <div class="grau">
-                    <label>Grau:</label>
-                    <input type="text" class="input"/>
-                </div>
-
-                <!-- CLASSE -->
-                <div class="classe">
-                    <label>Classe</label>
-                    <select class="input">
-                        <option>Energia</option>
-                        <option>Sla oq</option>
-                        <option>Sla oq 2</option>
-                    </select>
-                </div>
-
                 <!-- STATUS -->
                 <div class="status">
                     <label>STATUS</label>
@@ -74,14 +79,15 @@ class tabelaFicha extends HTMLElement {
                     <div><label>Cansado:</label><select><option>SIM</option><option>NÃO</option></select></div>
                 </div>
 
-                <!-- DANO -->
+                <!-- ATRIBUTOS -->
                 <div class="status">
-                    <label>DANO</label>
-                        <div><label>Dano Recebido:</label><input type="text" ></div>
-                        <div><label>Ferida Simples:</label><input type="text" ></div>
-                        <div><label>Ferida Profunda:</label><input type="text" ></div>
-                        <div><label>Ferida Fatal:</label><input type="text" ></div>
-                        <div><label>Rodada C/F:</label><input type="text" ></div>
+                    <label>ATRIBUTOS</label>
+                    <div><label>Força:</label><input type="text"></div>
+                    <div><label>Agilidade:</label><input type="text"></div>
+                    <div><label>Foco:</label><input type="text"></div>
+                    <div><label>Sabedoria:</label><input type="text"></div>
+                    <div><label>Consti.:</label><input type="text"></div>
+                    <div><label>Carisma:</label><input type="text"></div>
                 </div>
 
                 <!-- N D -->
@@ -95,15 +101,25 @@ class tabelaFicha extends HTMLElement {
                     <div><label>Carisma:</label><input type="text"></div>
                 </div>
 
-                <!-- ATRIBUTOS -->
+                <!-- DANO / FERIDA -->
                 <div class="status">
-                    <label>ATRIBUTOS</label>
-                    <div><label>Força:</label><input type="text"></div>
-                    <div><label>Agilidade:</label><input type="text"></div>
-                    <div><label>Foco:</label><input type="text"></div>
-                    <div><label>Sabedoria:</label><input type="text"></div>
-                    <div><label>Consti.:</label><input type="text"></div>
-                    <div><label>Carisma:</label><input type="text"></div>
+                    <label>DANO</label>
+                        <div><label>Recebido:</label><input type="text" ></div>
+                        <div><label>Total:</label><input type="text" ></div>
+                    <label>FERIDA</label>
+                        <div><label>Simples:</label><input type="text" ></div>
+                        <div><label>Profunda:</label><input type="text" ></div>
+                        <div><label>Fatal:</label><input type="text" ></div>
+                </div>
+
+                <!-- RODADA / OUTROS -->
+                <div class="status">
+                    <label>RODADA</label>
+                        <div><label>Rodada:</label><input type="text" ></div>
+                        <div><label>Ferida:</label><input type="text" ></div>
+                    <label>OUTROS</label>
+                        <div><label>Cura:</label><input type="text" ></div>
+                        <div><button>Aplicar</button></div>
                 </div>
             </div>
         `;

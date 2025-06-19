@@ -11,7 +11,7 @@ class FichaCard extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
       <!-- CSS cars -->
-      <link rel="stylesheet" href="css/cssEspecifico/cardFicha.css">
+      <link rel="stylesheet" href="../../css/cssEspecifico/cardFicha.css">
 
       <!-- Card -->
       <div class="card">
@@ -47,7 +47,7 @@ class FichaCard extends HTMLElement {
     // Redirecionar ao clicar no card
     this.shadowRoot.querySelector('.informacoes').addEventListener('click', () => {
       // Aqui você pode passar parâmetros na URL
-      window.location.href = "fichaUtilizada.html";
+      window.location.href = "../../pagina/usar/ficha.html";
     });
   }
 }

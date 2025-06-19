@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Links Padrões para todas as paginas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../../midia/img/geral/logoParallax.png">
+    <link rel="stylesheet" href="../../css/cssPadrao/reset-min.css">
+    <link rel="stylesheet" href="../../css/cssEspecifico/ficha.css">
+    <link rel="stylesheet" href="../../css/cssEspecifico/barraNavegacao.css">
+    <link href="https://cdn.jsdelivr.net/npm/quill@1.3.6/dist/quill.snow.css" rel="stylesheet">
+    <title>Parallax</title>   
+<!----------------------------------------->
+<!-- Links especificos da paginas -->
+<!---------------------------------->   
+</head>
+<body style="background-color: #111111">
+<!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
+    <menu-principal></menu-principal>
+
+                <!-- Div da barra de menu -->
+                <div class="topnav">         
+                    <!-- Botões da esquerda -->
+                    <div class="navegacao">
+                        <a href="ficha.html" class="botaoNav">Ficha</a>
+                        <a href="outros.html" class="botaoNav">Outros</a>
+                        <a href="ficha.html" class="botaoNav">Editar</a>
+                        <a href="ficha.html" class="botaoNav">Salvar</a>
+                        <a href="ficha.html" class="botaoNav">Cancelar</a>
+                    </div>
+                </div>
+
+<!-- TABELA DA FICHA -->
+
+    <div class="fichaSuperior">
+        <div class="campoOutros">
+            <label class="labelStatus">Lore:</label>
+            <div id="editor-lore" class="inputCampo"></div>
+        </div>
+        <div class="campoOutros">
+            <label class="labelStatus">Notas:</label>
+            <div id="editor-notas" class="inputCampo"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/quill@1.3.6/dist/quill.js"></script>
+    <script>
+        const quillLore = new Quill('#editor-lore', {
+            theme: 'snow',
+            modules: {
+                toolbar: [
+                    [{ 'header': '1' }, { 'header': '2' }, { 'font': [] }],
+                    [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+                    ['bold', 'italic', 'underline'],
+                    ['link', 'image'],
+                    [{ 'align': [] }],
+                    ['clean']
+                ]
+            }
+        });
+    
+        const quillNotas = new Quill('#editor-notas', {
+            theme: 'snow',
+            modules: {
+                toolbar: [
+                    [{ 'header': '1' }, { 'header': '2' }, { 'font': [] }],
+                    [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+                    ['bold', 'italic', 'underline'],
+                    ['link', 'image'],
+                    [{ 'align': [] }],
+                    ['clean']
+                ]
+            }
+        });
+    </script>
+    <script src="../../componentes/menuPrincipal.js"></script>  
+</body>    
+</html>

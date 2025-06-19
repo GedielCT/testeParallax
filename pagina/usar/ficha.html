@@ -4,11 +4,10 @@
 <!-- Links Padrões para todas as paginas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="midia/img/geral/logoParallax.png">
-    <link rel="stylesheet" href="css/cssPadrao/reset-min.css">
-    <link rel="stylesheet" href="css/cssEspecifico/ficha.css">
-    <link rel="stylesheet" href="css/cssEspecifico/barraNavegacao.css">
-    <link href="https://cdn.jsdelivr.net/npm/quill@1.3.6/dist/quill.snow.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../../midia/img/geral/logoParallax.png">
+    <link rel="stylesheet" href="../../css/cssPadrao/reset-min.css">
+    <link rel="stylesheet" href="../../css/cssEspecifico/ficha.css">
+    <link rel="stylesheet" href="../../css/cssEspecifico/barraNavegacao.css">
     <title>Parallax</title>   
 <!----------------------------------------->
 <!-- Links especificos da paginas -->
@@ -22,13 +21,21 @@
                 <div class="topnav">         
                     <!-- Botões da esquerda -->
                     <div class="navegacao">
-                        <a href="cadastrarFicha.html">Salvar</a>
-                        <a href="cadastrarFicha.html">Cancelar</a>
+                        <a href="ficha.html" class="botaoNav">Ficha</a>
+                        <a href="outros.html" class="botaoNav">Outros</a>
+                        <a href="ficha.html" class="botaoNav">Editar</a>
+                        <a href="ficha.html" class="botaoNav">Salvar</a>
+                        <a href="ficha.html" class="botaoNav">Cancelar</a>
                     </div>
                 </div>
 
 <!-- TABELA DA FICHA -->
-    <div class="fichaSuperior">  
+    <div class="fichaSuperior">
+
+        <div class="campoGrande">
+            <div class="imagem"><label>IMAGEM</label></div>
+        </div>
+
         <tabela-ficha></tabela-ficha>
  
         <div class="campoGrande">
@@ -46,10 +53,6 @@
                 </div>
             </div>
         </div>
-        <div class="campoGrande">
-            <label class="labelStatus">Caracteristica Secundaria:</label>
-            <carac-secund class="rolagem"></carac-secund>
-        </div>
     </div>
     <div class="fichaSuperior">
         <div class="campoGrande">
@@ -65,37 +68,14 @@
             <textarea type="text" class="inputCampo"></textarea>
         </div>
         <div class="campoGrande">
-            <label class="labelStatus">Lore:</label>
-            <div id="editor-container" class="inputCampo"></div>
-        </div>        
+            <label class="labelStatus">Caracteristica Secundaria:</label>
+            <carac-secund-utilizado class="rolagem"></carac-secund-utilizado>
+        </div>     
     </div>
 
-    <script>
-        document.getElementById("adicionar-skill").addEventListener("click", () => {
-        const container = document.getElementById("skills-container");
-        const novoCard = document.createElement("card-skill");
-        container.appendChild(novoCard);
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/quill@1.3.6/dist/quill.js"></script>
-    <script>
-        const quill = new Quill('#editor-container', {
-        theme: 'snow',
-            modules: {
-                toolbar: [
-                    [{ 'header': '1' }, { 'header': '2' }, { 'font': [] }],
-                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-                    ['bold', 'italic', 'underline'],
-                    ['link', 'image'],
-                    [{ 'align': [] }],
-                    ['clean']
-                ]
-            }
-        });
-    </script>
-    <script type="module" src="componentes/tabelaFicha.js"></script>
-    <script type="module" src="componentes/cardSkill.js"></script>
-    <script type="module" src="componentes/caracSecud.js"></script>
-    <script src="componentes/menuPrincipal.js"></script>  
+    <script type="module" src="../../componentes/tabelaFicha.js"></script>
+    <script type="module" src="../../componentes/cardSkill.js"></script>
+    <script type="module" src="../../componentes/caracSecud.js"></script>
+    <script src="../../componentes/menuPrincipal.js"></script>  
 </body>    
 </html>
