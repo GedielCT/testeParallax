@@ -9,7 +9,7 @@
 
 .campoGrande {
   flex: 1 1 300px; /* cresce, encolhe, largura mínima de 300px */
-  min-width: 400px; /* impede que fique muito pequeno */
+  min-width: 300px; /* impede que fique muito pequeno */
   max-width: 100%; /* impede que ultrapasse o tamanho da tela */
   min-height: 400px; /* impede que fique muito pequeno */
   max-height: 100%; /* limite de altura */
