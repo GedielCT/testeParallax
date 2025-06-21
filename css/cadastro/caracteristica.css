@@ -1,0 +1,58 @@
+.tipo {
+    color: aliceblue;
+    font-size: 18px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    align-self: center;
+}
+
+.option {
+  display: flex;
+  padding: 10px;
+  align-items: center; /* alinha verticalmente */
+  gap: 8px; /* espaço entre o radio e o label */
+}
+
+.descricao {
+  width: 100%;
+}
+
+.titulo {
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 5px; /* pode ajustar o valor conforme desejar */
+}
+
+.conteudo {
+    color: aliceblue;
+    font-size: 14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 5px; /* pode ajustar o valor conforme desejar */
+}
+
+.observacao {
+    color: aliceblue;
+    font-size: 12px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 5px; /* pode ajustar o valor conforme desejar */
+}
+
+.requerimento {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.requerimento label {
+    color: aliceblue;
+    font-size: 12px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: block;
+    margin-bottom: 5px; /* pode ajustar o valor conforme desejar */
+}

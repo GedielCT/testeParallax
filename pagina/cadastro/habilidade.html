@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../../midia/img/geral/logoParallax.png">
     <link rel="stylesheet" href="../../css/cssPadrao/reset-min.css">
-    <link rel="stylesheet" href="../../css/cssEspecifico/ficha.css">
+    <link rel="stylesheet" href="../../css/cadastro/habilidade.css">
     <title>Parallax</title>   
 <!----------------------------------------->
 <!-- Links especificos da paginas -->
@@ -18,22 +18,27 @@
     <menu-cadastro></menu-cadastro>
 
         <div class="campoGrande">
-            <div>
-                <label class="labelHabilidade">Habilidade:</label>
+            <div class="campo">
+                <label class="labelCampo">Habilidade:</label>
                 <input class="inputHabilidade"/>
             </div>
-            <div class="rolagem">
-                <!-- Container onde os cards aparecerão -->
-                <div id="skills-container">
-                  <card-skill></card-skill>
-                </div>
-            
-                <!-- Botão para adicionar mais -->
-                <button id="adicionar-skill" class="addSkill">Adicionar Habilidade</button>
+            <div id="skills-container">
+                <card-skill></card-skill>
             </div>
+            
+            <!-- Botão para adicionar mais -->
+            <button id="adicionar-skill" class="addSkill">Adicionar Habilidade</button>
         </div>
 
-    <script type="module" src="../../componentes/cardSkill.js"></script>
+
+    <script>
+        document.getElementById("adicionar-skill").addEventListener("click", () => {
+        const container = document.getElementById("skills-container");
+        const novoCard = document.createElement("card-skill");
+        container.appendChild(novoCard);
+        });
+    </script>
+    <script type="module" src="../../componentes/cadastro/cardSkill.js"></script>
     <script src="../../componentes/menuPrincipal.js"></script>
     <script src="../../componentes/menuCadastro.js"></script>
 </body>    

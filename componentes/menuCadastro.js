@@ -14,7 +14,6 @@ class menuCadastro extends HTMLElement {
                     <!-- Botões da esquerda -->
                     <div class="navegacao">
                         <a href="ficha.html" class="botaoNav">Ficha</a>
-                        <a href="outros.html" class="botaoNav">Outros</a>
                         <a href="habilidade.html" class="botaoNav">Habilidade</a>
                         <a href="caracteristica.html" class="botaoNav">Caracteristica Secundaria</a>
                         <a href="ficha.html" class="botaoNav">Salvar</a>
