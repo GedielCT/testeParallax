@@ -1,0 +1,123 @@
+/* Ficha com grid para os campos */
+.ficha {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Tamanho minimo que as colunas devem ter */
+    gap: 10px;
+    max-width: 900px; /* Tamanho maximo da tabela */
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+/* Defini o tamanho do input NOME */
+.nome {
+  grid-column: span 5;
+}
+
+/* Defini o tamanho do input XP, CLASSE, DINHEIRO */
+.dinheiro {
+  grid-column: span 3;
+}
+
+.xp,
+.status button {
+  grid-column: span 2;
+}
+
+/* Layout de STATUS, DANO, N° D, ATRIBUTOS */
+.status {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Inputs e Selects maiores */
+.input {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 0;
+  max-width: 100%;
+}
+
+/* Inputs específicos de .status e .dano */
+.status select,
+.status button,
+.inputOutros {    
+    width: 100%;
+    min-width: 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.inputStatus {    
+    width: 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.labelStatus {
+    width: 60px;
+}
+
+.labelOutros {
+    width: 150px;
+}
+
+.teste {
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 10px; /* espaçamento entre label e input */
+}
+
+.status button:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
+}
+
+/* Layout das labels */
+label {
+    color: aliceblue;
+    font-size: 14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Título das Div's */
+.status > label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+  align-self: center;
+}
+
+/* Responsividade da tabela */
+@media (max-width: 690px) { /* Defini a partir de que tamanho vai denifir as configs */
+    .ficha {
+        grid-template-columns: 2fr; /* Deixa tudo empilhado */
+    }
+
+    .nome, .dinheiro {
+        grid-column: span 2; /* Tamanho dos campos */
+    }
+
+    .xp, .classe {
+      grid-column: span 1; /* Tamanho dos campos */
+    }
+}
