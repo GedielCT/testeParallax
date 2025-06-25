@@ -7,7 +7,7 @@ class tabelaFicha extends HTMLElement {
     connectedCallback(){
         const vida = 200;
         const anima = 23;
-        const impeto = 10;
+        const impeto = 12;
         const ultimato = 2;
         const cansado = false;
         const forca = 14;
