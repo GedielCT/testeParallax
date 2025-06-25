@@ -11,10 +11,9 @@
 
 /* Configuração da grid de STATUS, DANO, N° D, ATRIBUTOS */
 .status > div {
-  display: grid; 
-  grid-template-columns: 2fr 2fr; 
-  align-items: end;
-  gap: 8px;
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 10px; /* espaçamento entre label e input */
 }
 
 /* Defini o tamanho do input NOME */

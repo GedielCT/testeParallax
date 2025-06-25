@@ -5,17 +5,17 @@ class tabelaFicha extends HTMLElement {
     }
 
     connectedCallback(){
-        const vida = 100;
-        const anima = 10;
-        const impeto = 5;
-        const ultimato = 1;
-        const cansado = false;
+        var vida = Number(100);
+        var anima = Number(10);
+        var impeto = Number(5);
+        var ultimato = Number(1);
+        var cansado = false;
         var forca = Number(0);
-        const agilidade = 0;
-        const foco = 0;
-        const sabedoria = 0;
-        const consti = 0;
-        const carisma = 0;
+        var agilidade = Number(0);
+        var foco = Number(0);
+        var sabedoria = Number(0);
+        var consti = Number(0);
+        var carisma = Number(0);
         const recebido = 0;
         const total = 0;
         const simples = 0;
@@ -102,12 +102,12 @@ class tabelaFicha extends HTMLElement {
                 <!-- ATRIBUTOS -->
                 <div class="status">
                     <label>ATRIBUTOS</label>
-                    <div><label>Força:</label><input type="text" class="teste" value=${forca}><button class="forca">Teste</button></div>
-                    <div><label>Agilidade:</label><input type="text" value=${agilidade}></div>
-                    <div><label>Foco:</label><input type="text" value=${foco}></div>
-                    <div><label>Sabedoria:</label><input type="text" value=${sabedoria}></div>
-                    <div><label>Consti.:</label><input type="text" value=${consti}></div>
-                    <div><label>Carisma:</label><input type="text" value=${carisma}></div>
+                    <div><label>Força:</label><input type="text" class="forca" value=${forca}><button class="maisForca">🔺</button><button class="menosForca">🔻</button></div>
+                    <div><label>Agilidade:</label><input type="text" class="agilidade" value=${agilidade}><button class="maisAgilidade">🔺</button><button class="menosAgilidade">🔻</button></div>
+                    <div><label>Foco:</label><input type="text" class="foco" value=${foco}><button class="maisFoco">🔺</button><button class="menosFoco">🔻</button></div>
+                    <div><label>Sabedoria:</label><input type="text" class="sabedoria" value=${sabedoria}><button class="maisSabedoria">🔺</button><button class="menosSabedoria">🔻</button></div>
+                    <div><label>Consti.:</label><input type="text" class="consti" value=${consti}><button class="maisConsti">🔺</button><button class="menosConsti">🔻</button></div>
+                    <div><label>Carisma:</label><input type="text" class="carisma" value=${carisma}><button class="maisCarisma">🔺</button><button class="menosCarisma">🔻</button></div>
                 </div>
 
                 <!-- N D -->
@@ -144,9 +144,69 @@ class tabelaFicha extends HTMLElement {
             </div>
         `;
 
-        this.shadowRoot.querySelector('.forca').addEventListener('click', () => {
+        this.shadowRoot.querySelector('.maisForca').addEventListener('click', () => {
             forca += 1;
-            this.shadowRoot.querySelector('.teste').value = forca;
+            this.shadowRoot.querySelector('.forca').value = forca;
+        });
+        this.shadowRoot.querySelector('.menosForca').addEventListener('click', () => {
+            if(forca > 0) 
+                forca -= 1;
+            this.shadowRoot.querySelector('.forca').value = forca;
+        });
+
+
+        this.shadowRoot.querySelector('.maisAgilidade').addEventListener('click', () => {
+            agilidade += 1;
+            this.shadowRoot.querySelector('.agilidade').value = agilidade;
+        });
+        this.shadowRoot.querySelector('.menosAgilidade').addEventListener('click', () => {
+            if(agilidade > 0) 
+                agilidade -= 1;
+            this.shadowRoot.querySelector('.agilidade').value = agilidade;
+        });
+
+
+        this.shadowRoot.querySelector('.maisFoco').addEventListener('click', () => {
+            foco += 1;
+            this.shadowRoot.querySelector('.foco').value = foco;
+        });
+        this.shadowRoot.querySelector('.menosFoco').addEventListener('click', () => {
+            if(foco > 0) 
+                foco -= 1;
+            this.shadowRoot.querySelector('.foco').value = foco;
+        });
+
+
+        this.shadowRoot.querySelector('.maisSabedoria').addEventListener('click', () => {
+            sabedoria += 1;
+            this.shadowRoot.querySelector('.sabedoria').value = sabedoria;
+        });
+        this.shadowRoot.querySelector('.menosSabedoria').addEventListener('click', () => {
+            if(sabedoria > 0) 
+                sabedoria -= 1;
+            this.shadowRoot.querySelector('.sabedoria').value = sabedoria;
+        });
+
+
+        this.shadowRoot.querySelector('.maisConsti').addEventListener('click', () => {
+            consti += 1;
+            this.shadowRoot.querySelector('.consti').value = consti;
+        });
+        this.shadowRoot.querySelector('.menosConsti').addEventListener('click', () => {
+            if(consti > 0) 
+                consti -= 1;
+            this.shadowRoot.querySelector('.consti').value = consti;
+        });
+
+
+        this.shadowRoot.querySelector('.maisCarisma').addEventListener('click', () => {
+            carisma += 1;
+            this.shadowRoot.querySelector('.carisma').value = carisma;
+        });
+        this.shadowRoot.querySelector('.menosCarisma').addEventListener('click', () => {
+            if(carisma > 0) 
+                carisma -= 1;
+            this.shadowRoot.querySelector('.carisma').value = carisma;
         });
 
     }

@@ -9,8 +9,6 @@
     overflow-x: hidden;
 }
 
-
-
 /* Defini o tamanho do input NOME */
 .nome {
   grid-column: span 5;
