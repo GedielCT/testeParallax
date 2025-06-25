@@ -1,9 +1,9 @@
 /* Ficha com grid para os campos */
 .ficha {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Tamanho minimo que as colunas devem ter */
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Tamanho minimo que as colunas devem ter */
     gap: 10px;
-    max-width: 850px; /* Tamanho maximo da tabela */
+    max-width: 900px; /* Tamanho maximo da tabela */
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
