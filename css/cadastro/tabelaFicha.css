@@ -11,9 +11,16 @@
 
 /* Configuração da grid de STATUS, DANO, N° D, ATRIBUTOS */
 .status > div {
+  display: grid; 
+  grid-template-columns: 2fr 2fr; 
+  align-items: end;
+  gap: 8px;
+}
+
+.teste {
     display: flex;
     align-items: center; /* alinha verticalmente */
-    gap: 10px; /* espaçamento entre label e input */
+    gap: 5px; /* espaçamento entre label e input */
 }
 
 /* Defini o tamanho do input NOME */
@@ -57,10 +64,9 @@
 
 /* Inputs específicos de .status e .dano */
 .status input,
-.status select,
-.status button {
+.status select {
     width: 100%;
-    min-width: 70px;
+    min-width: 40px;
     box-sizing: border-box;
     border-radius: 6px;
     border: 1px solid #ccc;

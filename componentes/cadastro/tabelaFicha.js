@@ -92,22 +92,76 @@ class tabelaFicha extends HTMLElement {
                 <!-- STATUS -->
                 <div class="status">
                     <label>STATUS</label>
-                    <div><label>Vida:</label><input type="text" value=${vida}></div>
-                    <div><label>Anima:</label><input type="text" value=${anima}></div>
-                    <div><label>Ímpeto:</label><input type="text" value=${impeto}></div>
-                    <div><label>Ultimato:</label><input type="text" value=${ultimato}></div>
-                    <div><label>Cansado:</label><select><option>SIM</option><option>NÃO</option></select></div>
+                    <div><label class="labelStatus">Vida:</label><input type="text" value=${vida}></div>
+                    <div><label class="labelStatus">Anima:</label><input type="text" value=${anima}></div>
+                    <div><label class="labelStatus">Ímpeto:</label><input type="text" value=${impeto}></div>
+                    <div><label class="labelStatus">Ultimato:</label><input type="text" value=${ultimato}></div>
+                    <div><label class="labelStatus">Cansado:</label><select><option>SIM</option><option>NÃO</option></select></div>
                 </div>
 
                 <!-- ATRIBUTOS -->
                 <div class="status">
                     <label>ATRIBUTOS</label>
-                    <div><label>Força:</label><input type="text" class="forca" value=${forca}><button class="maisForca">🔺</button><button class="menosForca">🔻</button></div>
-                    <div><label>Agilidade:</label><input type="text" class="agilidade" value=${agilidade}><button class="maisAgilidade">🔺</button><button class="menosAgilidade">🔻</button></div>
-                    <div><label>Foco:</label><input type="text" class="foco" value=${foco}><button class="maisFoco">🔺</button><button class="menosFoco">🔻</button></div>
-                    <div><label>Sabedoria:</label><input type="text" class="sabedoria" value=${sabedoria}><button class="maisSabedoria">🔺</button><button class="menosSabedoria">🔻</button></div>
-                    <div><label>Consti.:</label><input type="text" class="consti" value=${consti}><button class="maisConsti">🔺</button><button class="menosConsti">🔻</button></div>
-                    <div><label>Carisma:</label><input type="text" class="carisma" value=${carisma}><button class="maisCarisma">🔺</button><button class="menosCarisma">🔻</button></div>
+                    <div>
+                        <label class="labelStatus">Força:</label>
+                        <div class="teste">
+                            <input type="text" class="forca" value=${forca}>
+                            <div>
+                                <button class="maisForca">A</button>
+                                <button class="menosForca">V</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="labelStatus">Agilidade:</label>
+                        <div class="teste">
+                            <input type="text" class="agilidade" value=${agilidade}>
+                            <div>
+                                <button class="maisAgilidade">A</button>
+                                <button class="menosAgilidade">V</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="labelStatus">Foco:</label>
+                        <div class="teste">
+                            <input type="text" class="foco" value=${foco}>
+                            <div>
+                                <button class="maisFoco">A</button>
+                                <button class="menosFoco">V</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="labelStatus">Sabedoria:</label>
+                        <div class="teste">
+                            <input type="text" class="sabedoria" value=${sabedoria}>
+                            <div>
+                                <button class="maisSabedoria">A</button>
+                                <button class="menosSabedoria">V</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="labelStatus">Consti.:</label>
+                        <div class="teste">
+                            <input type="text" class="consti" value=${consti}>
+                            <div>
+                                <button class="maisConsti">A</button>
+                                <button class="menosConsti">V</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="labelStatus">Carisma:</label>
+                        <div class="teste">
+                            <input type="text" class="carisma" value=${carisma}>
+                            <div>
+                                <button class="maisCarisma">A</button>
+                                <button class="menosCarisma">V</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- N D -->
