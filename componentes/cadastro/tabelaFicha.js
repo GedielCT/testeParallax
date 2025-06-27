@@ -107,8 +107,8 @@ class tabelaFicha extends HTMLElement {
                         <div class="teste">
                             <input type="text" class="forca" value=${forca}>
                             <div>
-                                <button class="maisForca">A</button>
-                                <button class="menosForca">V</button>
+                                <button class="maisForca">🔺</button>
+                                <button class="menosForca">🔻</button>
                             </div>
                         </div>
                     </div>
@@ -117,8 +117,8 @@ class tabelaFicha extends HTMLElement {
                         <div class="teste">
                             <input type="text" class="agilidade" value=${agilidade}>
                             <div>
-                                <button class="maisAgilidade">A</button>
-                                <button class="menosAgilidade">V</button>
+                                <button class="maisAgilidade">🔺</button>
+                                <button class="menosAgilidade">🔻</button>
                             </div>
                         </div>
                     </div>
@@ -127,8 +127,8 @@ class tabelaFicha extends HTMLElement {
                         <div class="teste">
                             <input type="text" class="foco" value=${foco}>
                             <div>
-                                <button class="maisFoco">A</button>
-                                <button class="menosFoco">V</button>
+                                <button class="maisFoco">🔺</button>
+                                <button class="menosFoco">🔻</button>
                             </div>
                         </div>
                     </div>
@@ -137,8 +137,8 @@ class tabelaFicha extends HTMLElement {
                         <div class="teste">
                             <input type="text" class="sabedoria" value=${sabedoria}>
                             <div>
-                                <button class="maisSabedoria">A</button>
-                                <button class="menosSabedoria">V</button>
+                                <button class="maisSabedoria">🔺</button>
+                                <button class="menosSabedoria">🔻</button>
                             </div>
                         </div>
                     </div>
@@ -147,8 +147,8 @@ class tabelaFicha extends HTMLElement {
                         <div class="teste">
                             <input type="text" class="consti" value=${consti}>
                             <div>
-                                <button class="maisConsti">A</button>
-                                <button class="menosConsti">V</button>
+                                <button class="maisConsti">🔺</button>
+                                <button class="menosConsti">🔻</button>
                             </div>
                         </div>
                     </div>
@@ -157,8 +157,8 @@ class tabelaFicha extends HTMLElement {
                         <div class="teste">
                             <input type="text" class="carisma" value=${carisma}>
                             <div>
-                                <button class="maisCarisma">A</button>
-                                <button class="menosCarisma">V</button>
+                                <button class="maisCarisma">🔺</button>
+                                <button class="menosCarisma">🔻</button>
                             </div>
                         </div>
                     </div>

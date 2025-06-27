@@ -13,8 +13,8 @@
 .status > div {
   display: grid; 
   grid-template-columns: 2fr 2fr; 
-  align-items: end;
-  gap: 8px;
+  align-items: center;
+  gap: 5px;
 }
 
 .teste {
