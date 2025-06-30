@@ -5,6 +5,7 @@ class tabelaFicha extends HTMLElement {
     }
 
     connectedCallback(){
+        var nivel = Number(0);
         var vida = Number(100);
         var anima = Number(10);
         var impeto = Number(5);
@@ -78,9 +79,15 @@ class tabelaFicha extends HTMLElement {
                 </div>
 
                 <!-- NIVEL -->
-                <div class="nivel">    
-                    <label>Nível:</label>
-                    <input type="text" class="input"/>
+                <div class="teste2">    
+                    <div class="nivel">
+                        <label>Nível:</label>
+                        <input type="text" class="input" id="nivel" value=${nivel} readonly/>
+                    </div>
+                    <div>
+                        <button class="maisNivel">🔺</button>
+                        <button class="menosNivel">🔻</button>
+                    </div>
                 </div>
 
                 <!-- EXPERIENCIA -->
@@ -92,10 +99,10 @@ class tabelaFicha extends HTMLElement {
                 <!-- STATUS -->
                 <div class="status">
                     <label>STATUS</label>
-                    <div><label class="labelStatus">Vida:</label><input type="text" value=${vida}></div>
-                    <div><label class="labelStatus">Anima:</label><input type="text" value=${anima}></div>
-                    <div><label class="labelStatus">Ímpeto:</label><input type="text" value=${impeto}></div>
-                    <div><label class="labelStatus">Ultimato:</label><input type="text" value=${ultimato}></div>
+                    <div><label class="labelStatus">Vida:</label><input type="text" class="vida" value=${vida} readonly></div>
+                    <div><label class="labelStatus">Anima:</label><input type="text" id="anima" value=${anima} readonly></div>
+                    <div><label class="labelStatus">Ímpeto:</label><input type="text" id="impeto" value=${impeto} readonly></div>
+                    <div><label class="labelStatus">Ultimato:</label><input type="text" id="ultimato" value=${ultimato} readonly></div>
                     <div><label class="labelStatus">Cansado:</label><select><option>SIM</option><option>NÃO</option></select></div>
                 </div>
 
@@ -105,7 +112,7 @@ class tabelaFicha extends HTMLElement {
                     <div>
                         <label class="labelStatus">Força:</label>
                         <div class="teste">
-                            <input type="text" class="forca" value=${forca}>
+                            <input type="text" class="forca" value=${forca} readonly>
                             <div>
                                 <button class="maisForca">🔺</button>
                                 <button class="menosForca">🔻</button>
@@ -115,7 +122,7 @@ class tabelaFicha extends HTMLElement {
                     <div>
                         <label class="labelStatus">Agilidade:</label>
                         <div class="teste">
-                            <input type="text" class="agilidade" value=${agilidade}>
+                            <input type="text" class="agilidade" value=${agilidade} readonly>
                             <div>
                                 <button class="maisAgilidade">🔺</button>
                                 <button class="menosAgilidade">🔻</button>
@@ -125,7 +132,7 @@ class tabelaFicha extends HTMLElement {
                     <div>
                         <label class="labelStatus">Foco:</label>
                         <div class="teste">
-                            <input type="text" class="foco" value=${foco}>
+                            <input type="text" class="foco" value=${foco} readonly>
                             <div>
                                 <button class="maisFoco">🔺</button>
                                 <button class="menosFoco">🔻</button>
@@ -135,7 +142,7 @@ class tabelaFicha extends HTMLElement {
                     <div>
                         <label class="labelStatus">Sabedoria:</label>
                         <div class="teste">
-                            <input type="text" class="sabedoria" value=${sabedoria}>
+                            <input type="text" class="sabedoria" value=${sabedoria} readonly>
                             <div>
                                 <button class="maisSabedoria">🔺</button>
                                 <button class="menosSabedoria">🔻</button>
@@ -145,7 +152,7 @@ class tabelaFicha extends HTMLElement {
                     <div>
                         <label class="labelStatus">Consti.:</label>
                         <div class="teste">
-                            <input type="text" class="consti" value=${consti}>
+                            <input type="text" class="consti" value=${consti} readonly>
                             <div>
                                 <button class="maisConsti">🔺</button>
                                 <button class="menosConsti">🔻</button>
@@ -155,7 +162,7 @@ class tabelaFicha extends HTMLElement {
                     <div>
                         <label class="labelStatus">Carisma:</label>
                         <div class="teste">
-                            <input type="text" class="carisma" value=${carisma}>
+                            <input type="text" class="carisma" value=${carisma} readonly>
                             <div>
                                 <button class="maisCarisma">🔺</button>
                                 <button class="menosCarisma">🔻</button>
@@ -167,36 +174,66 @@ class tabelaFicha extends HTMLElement {
                 <!-- N D -->
                 <div class="status">
                     <label>N° D</label>
-                    <div><label>Força:</label><input type="text" value=${forca}></div>
-                    <div><label>Agilidade:</label><input type="text" value=${agilidade}></div>
-                    <div><label>Foco:</label><input type="text" value=${foco}></div>
-                    <div><label>Sabedoria:</label><input type="text" value=${sabedoria}></div>
-                    <div><label>Consti.:</label><input type="text" value=${consti}></div>
-                    <div><label>Carisma:</label><input type="text" value=${carisma}></div>
+                    <div><label>Força:</label><input type="text" value=${forca} readonly></div>
+                    <div><label>Agilidade:</label><input type="text" value=${agilidade} readonly></div>
+                    <div><label>Foco:</label><input type="text" value=${foco} readonly></div>
+                    <div><label>Sabedoria:</label><input type="text" value=${sabedoria} readonly></div>
+                    <div><label>Consti.:</label><input type="text" value=${consti} readonly></div>
+                    <div><label>Carisma:</label><input type="text" value=${carisma} readonly></div>
                 </div>
 
                 <!-- DANO / FERIDA -->
                 <div class="status">
                     <label>DANO</label>
-                        <div><label>Recebido:</label><input type="text" value=${recebido}></div>
-                        <div><label>Total:</label><input type="text" value=${total}></div>
+                        <div><label>Recebido:</label><input type="text" value=${recebido} readonly></div>
+                        <div><label>Total:</label><input type="text" value=${total} readonly></div>
                     <label>FERIDA</label>
-                        <div><label>Simples:</label><input type="text" value=${simples}></div>
-                        <div><label>Profunda:</label><input type="text" value=${profunda}></div>
-                        <div><label>Fatal:</label><input type="text" value=${fatal}></div>
+                        <div><label>Simples:</label><input type="text" value=${simples} readonly></div>
+                        <div><label>Profunda:</label><input type="text" value=${profunda} readonly></div>
+                        <div><label>Fatal:</label><input type="text" value=${fatal} readonly></div>
                 </div>
 
                 <!-- RODADA / OUTROS -->
                 <div class="status">
                     <label>RODADA</label>
-                        <div><label>Rodada:</label><input type="text" value=${rodada}></div>
-                        <div><label>Ferida:</label><input type="text" value=${ferida}></div>
+                        <div><label>Rodada:</label><input type="text" value=${rodada} readonly></div>
+                        <div><label>Ferida:</label><input type="text" value=${ferida} readonly></div>
                     <label>OUTROS</label>
-                        <div><label>Cura:</label><input type="text" value=${cura}></div>
+                        <div><label>Cura:</label><input type="text" value=${cura} readonly></div>
                         <div><button>Aplicar</button></div>
                 </div>
             </div>
         `;
+
+        this.shadowRoot.querySelector('.maisNivel').addEventListener('click', () => {
+            nivel += 1;
+            vida += 10;
+            anima += 2;
+            impeto += 2;
+            if(nivel==3)
+                ultimato += 1;
+            this.shadowRoot.querySelector('#nivel').value = nivel;
+            this.shadowRoot.querySelector('.vida').value = vida;
+            this.shadowRoot.querySelector('#anima').value = anima;
+            this.shadowRoot.querySelector('#impeto').value = impeto;
+            this.shadowRoot.querySelector('#ultimato').value = ultimato;
+        });
+        this.shadowRoot.querySelector('.menosNivel').addEventListener('click', () => {
+            if(nivel > 0){
+                nivel -= 1;
+                vida -= 10;
+                anima -= 2;
+                impeto -= 2;
+                if(nivel == 2){
+                    ultimato -= 1;
+                }
+            }
+            this.shadowRoot.querySelector('#nivel').value = nivel;
+            this.shadowRoot.querySelector('.vida').value = vida;
+            this.shadowRoot.querySelector('#anima').value = anima;
+            this.shadowRoot.querySelector('#impeto').value = impeto;
+            this.shadowRoot.querySelector('#ultimato').value = ultimato;
+        });
 
         this.shadowRoot.querySelector('.maisForca').addEventListener('click', () => {
             forca += 1;
@@ -244,12 +281,17 @@ class tabelaFicha extends HTMLElement {
 
         this.shadowRoot.querySelector('.maisConsti').addEventListener('click', () => {
             consti += 1;
+            vida += 5;
             this.shadowRoot.querySelector('.consti').value = consti;
+            this.shadowRoot.querySelector('.vida').value = vida;
         });
         this.shadowRoot.querySelector('.menosConsti').addEventListener('click', () => {
-            if(consti > 0) 
+            if(consti > 0) {
                 consti -= 1;
+                vida -= 5;
+            }
             this.shadowRoot.querySelector('.consti').value = consti;
+            this.shadowRoot.querySelector('.vida').value = vida;
         });
 
 

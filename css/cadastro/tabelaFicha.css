@@ -23,6 +23,12 @@
     gap: 5px; /* espaçamento entre label e input */
 }
 
+.teste2 {
+    display: flex;
+    align-items: start; /* alinha verticalmente */
+    gap: 5px; /* espaçamento entre label e input */
+}
+
 /* Defini o tamanho do input NOME */
 .nome {
   grid-column: span 5;
